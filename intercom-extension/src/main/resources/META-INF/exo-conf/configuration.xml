@@ -41,6 +41,9 @@
                         <field name="dependencies">
                             <collection type="java.util.ArrayList">
                                 <value>
+                                    <string>intercom-portlets</string>
+                                </value>
+                                <value>
                                     <string>intercom-extension</string>
                                 </value>
                             </collection>
