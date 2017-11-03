@@ -43,7 +43,7 @@ public class IntercomSettings implements ResourceContainer {
     private static String USER_ID_KEY = "user_id";
     private static String USER_NAME_KEY = "user_name";
     private static String USER_EMAIL_KEY = "user_email";
-    private static String USER_SIGNIN_DATE_KEY = "user_signin_date";
+    private static String USER_CREATED_DATE_KEY = "user_created_date";
     private static String INTERCOM_APP_ID_KEY = "APP_ID";
     private static String INTERCOM_HMAC_KEY = "HMAC";
     /**
@@ -93,8 +93,8 @@ public class IntercomSettings implements ResourceContainer {
             jsonUser.put(USER_NAME_KEY, user.getDisplayName());
             //--- Set email
             jsonUser.put(USER_EMAIL_KEY, user.getEmail());
-            //--- Set last login time
-            jsonUser.put(USER_SIGNIN_DATE_KEY, user.getLastLoginTime().getTime());
+            //--- Set Signup (created_at) Unix timestamp
+            jsonUser.put(USER_CREATED_DATE_KEY, (user.getCreatedDate().getTime())/1000);
 
             jsonGlobal.put("user", jsonUser);
         } catch (Exception e) {
