@@ -72,7 +72,7 @@ We can simple install the add-on from central catalog by command:
 
 [source, shell]
 ----
-./addon install intercom:1.0.0
+./addon install intercom:1.0.0-RC02
 ----
 
 === Configure Intercom Parameters
