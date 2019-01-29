@@ -7,6 +7,8 @@
 
         }
 )
+@Stylesheets({
+        @Stylesheet(id = "respondStyle", value = "style/respond.css") })
 
 @Assets("*")
 package org.exoplatform.intercom.respond;
@@ -17,3 +19,5 @@ import juzu.plugin.asset.Assets;
 import juzu.plugin.asset.Script;
 import juzu.plugin.asset.Scripts;
 import juzu.plugin.portlet.Portlet;
+import juzu.plugin.asset.Stylesheet;
+import juzu.plugin.asset.Stylesheets;

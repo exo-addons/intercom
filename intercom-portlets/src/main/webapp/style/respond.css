@@ -1,0 +1,10 @@
+#intercom-container .intercom-launcher-frame, #intercom-positioner-tree .intercom-launcher-frame {
+    z-index: 2147483000!important;
+    position: fixed!important;
+    bottom: 15px;
+    right: 10px;
+    width: 60px!important;
+    height: 60px!important;
+    border-radius: 50%!important;
+    background: #476a9c!important;
+}
